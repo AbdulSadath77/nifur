@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Slaz</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      /* border: 1px solid red; */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h2 class="logo" title="Slaz" onclick="window.location.reload()">
+        Slaz
+      </h2>
+      <button id="coffee" class="coffee" title="Buy me a Coffee">
+        Coffee
+      </button>
+    </nav>
+    <h2>Just imagine</h2>
+    <form>
+      <input type="text" name="searchbar" id="searchBar" class="search-bar" title="Search your imagination"
+        placeholder="Search image" autocomplete="on" spellcheck="true" required />
+      <input type="submit" id="searchBtn" class="search-button" title="Search" value="Search" />
+    </form>
+  </header>
+  <main>
+    <div id="column1" class="column-1"></div>
+    <div id="column2" class="column-2"></div>
+    <div id="column3" class="column-3"></div>
+    <div id="column4" class="column-4"></div>
+    <div class="spinner-container" id="spinnerContainer">
+      <div class="loading-spinner" id="loadingSpinner"></div>
+      <h3 class="loading-text" id="loadingText">Loading...</h3>
+    </div>
+  </main>
+  <template id="imageTemplate">
+    <img src="#" alt="Alternate Text" class="image-card" id="imageCard" />
+  </template>
+</body>
+<script src="script.js"></script>
+
+</html>

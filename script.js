@@ -49,8 +49,8 @@ function bodyScroll(searchedValue) {
         if (page == 7) {
           loadingSpinner.className = "spinner-offline";
           loadingSpinner.style.backgroundColor = "var(--secondary-color)";
-          loadingSpinner.innerHTML =
-            "<a href='#' title='Upgrade' id='upgradeBtn'>Upgrade Now</a>";
+          loadingSpinner.innerHTML = "<h4>Max Limit Reached! Try to search new Images...</h4>";
+            //"<a href='#' title='Upgrade' id='upgradeBtn'>Upgrade Now</a>";
           loadingText.style.display = "none";
         }
         page++;
